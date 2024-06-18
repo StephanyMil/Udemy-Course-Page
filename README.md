@@ -1,7 +1,7 @@
 # Production Deployment
 This project was versioned with [Vercel](https://vercel.com/).
 
-[Udemy Course Page](https://udemy-course-page-3vh4.vercel.app/)
+[Udemy Course Page](https://udemy-course-page-3vh4.vercel.app/) website
 
 # Getting Started with Create React App
 
