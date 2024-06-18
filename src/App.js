@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark bg-custom">
         <a className="navbar-brand" href="/">
-          <img src=".images/udemy.png" alt="Udemy logo" />
+          <img src="./images/udemy.png" alt="Udemy logo" />
         </a>
         <h1 className="course-title">
           | Curso de React.js Completo
