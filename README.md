@@ -1,3 +1,8 @@
+# Production Deployment
+This project was versioned with [Vercel](https://vercel.com/).
+
+[Udemy Course Page](https://udemy-course-page-3vh4.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
