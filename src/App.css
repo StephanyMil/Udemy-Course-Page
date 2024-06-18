@@ -42,7 +42,8 @@ img {
   margin: auto;
 }
 
-.navbar.course-title {
+/* Estilo do título */
+.navbar .course-title {
   color: black;
   font-size: 28px;
   font-weight: bold;
