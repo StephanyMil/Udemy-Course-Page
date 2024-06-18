@@ -1,0 +1,15 @@
+/* Estilos globais */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  background-color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+}
