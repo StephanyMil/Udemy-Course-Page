@@ -89,7 +89,64 @@ const Course = () => {
 
     const toggleModule = (index) => {
         setActiveMOdule(index === activeModule ? null : index);
-    }
+    };
+
+    return (
+        <div className="container mt-5">
+            <div className="row">
+                <div className="col-md-8">
+                    <div className="video-player mb-4">
+                        <ReactPlayer url={courseData.videoUrl}/>
+                    </div>
+                    <div className="description mt-4">
+                        <p>{courseData.description}</p>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="course-info p-4 bg light rounded">
+                        <h2>{courseData.title}</h2> {/*Título do curso*/}
+                        <div className="modules-list mt-3">
+                            <div className="modules-container">
+                                <ul>
+                                    {courseData.modules.map((module, index) => (
+                                        <li
+                                            key={index}
+                                            className={`module-item ${
+                                                activeModule === index ? 'active' : ''
+                                                }`}
+                                        >
+                                            <button
+                                                className="module-button"
+                                                onClick={() => toggleModule(index)}
+                                            >
+                                                {module.title}
+                                                <span className="progress-indicator">
+                                                    {module.progress}
+                                                </span>
+                                                <span className="duration">
+                                                    {module.duration}
+                                                </span>
+                                                <span className="arrow-down">
+                                                    ▼
+                                                </span>
+                                            </button>
+                                            <ul className="lessons-list">
+                                                {module.lessons.map((lesson, lessonIndex) => (
+                                                    <li key={lessonIndex} className="lesson-item">
+                                                        {lesson}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 
 }
 

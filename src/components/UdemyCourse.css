@@ -1,0 +1,151 @@
+/* Estilos gerais*/
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-8 {
+    .col-md-4 {
+        padding: 20px;
+    }
+}
+
+/* Estilo para o player de vídeo */
+.video-player {
+    width: 100%;
+    height: 400px;
+}
+
+/* Estilo para a descrição do curso */
+.description {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* Estilo para as informações do curso */
+.course-info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.course-info h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para a lista de módulos */
+.modules-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para os módulos */
+.modules-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+    margin-bottom: 20px;
+    width: 100%;
+    position: sticky;
+    top: 120px;
+}
+
+.module-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.module-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* Estilos para os botões de módulos */
+.module-button {
+    background-color: #3c096c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.buttons-container {
+    margin-top: 10px; /* Espaço entre o título do módulo e as lições */
+}
+
+.module-button:hover {
+    background-color: #e0e0e0;
+}
+  
+.progress-indicator {
+    margin-right: 10px;
+    font-weight: bold;
+}
+  
+.duration {
+    margin-right: 10px;
+}
+  
+.arrow-down {
+    font-size: 1.2em;
+}
+  
+.lessons-list {
+    display: none;
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.module-item.active .lessons-list {
+    display: block;
+}
+  
+.lesson-item {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width 768px) {
+    .row {
+        flex-direction: column; /* Alinha os elementos em coluna */
+    }
+    .col-md-4, .col-md-8 {
+        width: 100%; /* Cada coluna ocupa 100% da largura */
+    }
+    .modules-container {
+        top: 80px; /* Ajuste a posição da barra de módulos para telas menores */
+    }
+}
