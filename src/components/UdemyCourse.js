@@ -94,7 +94,7 @@ const Course = () => {
     return (
         <div className="container mt-5">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-12 col-md-8">
                     <div className="video-player mb-4">
                         <ReactPlayer url={courseData.videoUrl} width="100%" height="400px" />
                     </div>
@@ -102,7 +102,7 @@ const Course = () => {
                         <p>{courseData.description}</p>
                     </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                     <div className="course-info p-4 bg light rounded">
                         <h2>{courseData.title}</h2> {/*Título do curso*/}
                         <div className="modules-list mt-3">
