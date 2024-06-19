@@ -8,7 +8,6 @@ body {
 /* Estilo para o componente App */
 .App {
   text-align: center;
-  padding-top: 20px;
 }
 
 /* Personalizando a barra de navegação */
@@ -20,8 +19,13 @@ body {
   background-color: #3C096C;
 }
 
-.navbar.navbar-brand {
-  background-color: white;
+/* Estilo do título da navbar */
+.navbar-title {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: auto; /* Empurra o título para a esquerda */
 }
 
 /* Estilos do conteúdo principal */
@@ -31,7 +35,7 @@ body {
 
 .course-title {
   text-align: center;
-  margin-top: 10px;
+  margin-top: auto;
   margin-bottom: 20px;
 }
 
@@ -40,14 +44,6 @@ img {
   width: 100px;
   object-fit: cover;
   margin: auto;
-}
-
-/* Estilo do título */
-.navbar .course-title {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: 20px;
 }
 
 /* Responsividade */

@@ -7,12 +7,14 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark bg-custom">
-        <a className="navbar-brand" href="/">
-          <img src="./images/udemy.png" alt="Udemy logo" />
-        </a>
-        <h1 className="course-title">
-          | Curso de React.js Completo
-        </h1>
+        <div className="container d-flex justify-content-between align-items-center"> {/* Adiciona container para flexbox */}
+          <a className="navbar-brand d-flex" href="/">
+            <img src="./images/udemy.png" alt="Udemy logo" />
+          </a>
+          <h1 className="navbar-title d-flex">
+            | Curso de React.js Completo
+          </h1>
+        </div>
       </nav>
       <main className="main-content">
         <UdemyCourse />
