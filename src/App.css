@@ -10,11 +10,6 @@ body {
   text-align: center;
 }
 
-/* Personalizando a barra de navegação */
-.navbar {
-  background-color: black;
-}
-
 .navbar-dark.bg-custom{
   background-color: #3C096C;
 }
