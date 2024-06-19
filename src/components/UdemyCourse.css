@@ -32,6 +32,7 @@ body {
 .description {
     margin-top: 20px;
     text-align: justify;
+    color: black;
 }
 
 /* Estilo para as informações do curso */
@@ -55,6 +56,7 @@ body {
     margin-top: 20px;
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 /* Estilo para os módulos */
@@ -62,7 +64,7 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
     margin-bottom: 20px;
     width: 100%;
     position: sticky;
@@ -73,7 +75,7 @@ body {
     margin-bottom: 15px;
     position: relative;
 }
-
+/*
 .module-item::after {
     content: "";
     position: absolute;
@@ -83,7 +85,7 @@ body {
     height: 1px;
     background-color: #ddd;
 }
-
+*/
 /* Estilos para os botões de módulos */
 .module-button {
     background-color: #3c096c;
@@ -94,9 +96,9 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 5px;
+    margin-left: -10px;
     cursor: pointer;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     display: block;
     width: 100%;
     border-radius: 5px;
@@ -136,7 +138,8 @@ body {
   
 .lesson-item {
     padding: 5px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    margin-left: -8px;
     background-color: white;
     border-radius: 5px;
     width: 100%;
